@@ -1,6 +1,6 @@
-# Web app for person management
+# Web app for EBI person management
 
-This repository contains the web app for person management. You can create, update, view and delete person data using this web app. 
+This repository contains the web app for EBI person management. You can create, update, view and delete person data using this web app. 
 
 **NOTE :** Before running this web app, you need to run the **REST API** from the repository : https://github.com/Nusky-cloud/ebi-masterdata-person-api.git
 
