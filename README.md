@@ -20,6 +20,41 @@ After that, execute below command in a console.
 npm install -g @angular/cli@6.2.3
 ```
 
+Execute **ng -v** and you should see below output.
+```shell
+     _                      _                 ____ _     ___
+    / \   _ __   __ _ _   _| | __ _ _ __     / ___| |   |_ _|
+   / △ \ | '_ \ / _` | | | | |/ _` | '__|   | |   | |    | |
+  / ___ \| | | | (_| | |_| | | (_| | |      | |___| |___ | |
+ /_/   \_\_| |_|\__, |\__,_|_|\__,_|_|       \____|_____|___|
+                |___/
+
+
+Angular CLI: 6.2.9
+Node: 8.9.4
+OS: win32 x64
+Angular: 6.1.10
+... animations, common, compiler, compiler-cli, core, forms
+... http, language-service, platform-browser
+... platform-browser-dynamic, router
+
+Package                           Version
+-----------------------------------------------------------
+@angular-devkit/architect         0.8.9
+@angular-devkit/build-angular     0.8.9
+@angular-devkit/build-optimizer   0.8.9
+@angular-devkit/build-webpack     0.8.9
+@angular-devkit/core              0.8.9
+@angular-devkit/schematics        0.8.9
+@angular/cli                      6.2.9
+@ngtools/webpack                  6.2.9
+@schematics/angular               0.8.9
+@schematics/update                0.8.9
+rxjs                              6.2.2
+typescript                        2.9.2
+webpack                           4.16.4
+```
+
 ## Running
 
 - First, clone this repository on your computer or download as a zip file.
