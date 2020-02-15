@@ -2,7 +2,7 @@
 
 This repository contains the web app for person management. You can create, update, view and delete person data using this web app. 
 
-**NOTE :** Before running this web app, you need to run the **REST API** from the repository : <repository-link>
+**NOTE :** Before running this web app, you need to run the **REST API** from the repository : https://github.com/Nusky-cloud/ebi-masterdata-person-api.git
 
 # How to run?
 
@@ -59,7 +59,7 @@ webpack                           4.16.4
 
 - First, clone this repository on your computer or download as a zip file.
 ```shell
-url
+git clone https://github.com/Nusky-cloud/ebi-person-management-ui.git
 ```
 
 - After that, open a console and change directory to project root and execute below command. This will install all the required node packages.
