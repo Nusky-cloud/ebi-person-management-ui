@@ -1,1 +1,101 @@
 /* You can add global styles to this file, and also import other style files */
+body {
+    background: #b3aeaf;
+    font-size: 20px;
+}
+
+.title {
+    background: black;
+    font-size: 25px;
+    color: white;
+    padding: 10px;
+    border-radius: 20px;
+}
+
+input, select {
+    padding: 5px;
+    border-radius: 10px;
+    font-size: 15px;
+    background: lightblue;
+    margin: 5px;
+}
+
+#firstNameControl {
+    float: left;
+    width: 50%;
+}
+
+#formPanel {
+    background: #7876a0;
+    border-radius: 20px;
+}
+
+.formControl {
+    padding-left: 20px;
+}
+
+.formButton {
+    margin: 20px;
+    font-size: 20px;
+}
+
+button {
+    border-radius: 20px;
+    background: #101077;
+    border: darkblue;
+    border-style: inset;
+    color: white;
+}
+
+button:disabled {
+    background: #4631b7;
+    border: #4631b7;
+    border-style: inset;
+    color: grey;
+}
+
+#formPanel tr td:first-child {
+    text-align: right;
+}
+
+#formPanel select {
+    width: 205px;
+}
+
+#gridPanel th, #gridPanel td {
+    width: 16.5%;
+    border: 1px solid darkblue;
+    border-radius: 10px;
+}
+
+#gridPanel th {
+    background: darkblue;
+    color: white;
+}
+
+#gridPanel td {
+    padding-left: 10px;
+}
+
+#gridPanel {
+    background: #438398;
+    border-radius: 20px;
+}
+
+.tableButton {
+    margin-left: 10px;
+}
+
+.requiredMessage {
+    color: red;
+    float: right;
+    padding-top: 10px;
+}
+
+.requiredField {
+    border: 2px solid red;
+}
+
+.requiredMark {
+    color: red;
+}

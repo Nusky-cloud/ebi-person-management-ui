@@ -1,0 +1,96 @@
+<div>
+  <div id="formPanel">
+    <div class="title">{{ isNewPerson ? 'Create' : 'Update' }} Person Data</div>
+    <div>
+      <form [formGroup]="personFormGroup">
+        <table>
+          <tr>
+            <th></th>
+            <th></th>
+          </tr>
+          <tr>
+            <td>
+              <label><span class="requiredMark">*</span> First Name : </label>
+            </td>
+            <td>
+              <input formControlName="firstName" class="{{ isFirstNameEmpty() ? 'requiredField' : '' }}">
+              <div class="requiredMessage" *ngIf="isFirstNameEmpty()">First Name is required!</div>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <label><span class="requiredMark">*</span> Last Name : </label>
+            </td>
+            <td>
+              <input formControlName="lastName" class="{{ isLastNameEmpty() ? 'requiredField' : '' }}">
+              <div class="requiredMessage" *ngIf="isLastNameEmpty()">Last Name is required!</div>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <label>Age : </label>
+            </td>
+            <td>
+              <select formControlName="age">
+                <option [value]="null">--Please Select--</option>
+                <option *ngFor="let ageValue of ageValues" [value]="ageValue">{{ ageValue }}</option>
+              </select>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <label>Favourite Color : </label>
+            </td>
+            <td>
+              <input formControlName="favouriteColor">
+            </td>
+          </tr>
+          <tr formArrayName="hobby" *ngFor="let hobby of personFormGroup.controls.hobby.controls; let i = index;">
+            <td>
+              <label *ngIf="i == 0">Hobbies : </label>
+            </td>
+            <td>
+              <input [formControlName]="i">
+              <button *ngIf="i == 0" (click)="addHobby()">Add field</button>
+              <button *ngIf="i > 0" (click)="removeHobby(i)">Remove field</button>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <button class="formButton" (click)="saveOrUpdatePerson()">{{ isNewPerson ? 'Save' : 'Update' }}</button>
+              <button class="formButton" (click)="clearFormValues()">Clear</button>
+            </td>
+            <td>
+            </td>
+          </tr>
+        </table>
+      </form>
+    </div>
+  </div>
+  <div id="gridPanel">
+    <div class="title">Persons in System</div>
+    <div>
+      <table>
+        <tr>
+          <th>First Name</th>
+          <th>Last Name</th>
+          <th>Age</th>
+          <th>Favourite Color</th>
+          <th>Hobbies</th>
+          <th></th>
+        </tr>
+        <tr *ngFor="let person of personList">
+          <td>{{ person.firstName }}</td>
+          <td>{{ person.lastName }}</td>
+          <td>{{ person.age }}</td>
+          <td>{{ person.favouriteColor }}</td>
+          <td>{{ person.hobby }}</td>
+          <td>
+            <button class="tableButton" (click)="fetchPerson(person)" [disabled]="isActionButtonDisabled(person)">Edit</button>
+            <button class="tableButton" (click)="removePerson(person)" [disabled]="isActionButtonDisabled(person)">Delete</button>
+          </td>
+        </tr>
+      </table>
+    </div>
+  </div>
+</div>

@@ -1,27 +1,44 @@
-# EbiPersonManagementUi
+# Web app for person management
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 6.2.3.
+This repository contains the web app for person management. You can create, update, view and delete person data using this web app. 
 
-## Development server
+**NOTE :** Before running this web app, you need to run the **REST API** from the repository : <repository-link>
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+# How to run?
 
-## Code scaffolding
+## Requirements
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+For building and running the web app you need:
 
-## Build
+- [Node 8.9.4](https://nodejs.org/download/release/v8.9.4)
+- Npm 6.10.0
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
+**NOTE :** Npm will be installed with Node. You can check the Node and Npm version in a console by **node -v** and **npm -v** respectively.
 
-## Running unit tests
+After that, execute below command in a console.
+```shell
+npm install -g @angular/cli@6.2.3
+```
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+# How to run?
 
-## Running end-to-end tests
+- First, clone this repository on your computer or download as a zip file.
+```shell
+url
+```
 
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
+- After that, open a console and change directory to project root and execute below command. This will install all the required node packages.
 
-## Further help
+```shell
+npm install
+```
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+- After successful installation of node packages, run the web app by executing below command.
+```shell
+ng serve
+```
+
+You can access the web app by copying and pasting below URL in the browser.
+```shell
+http://localhost:4200
+```
