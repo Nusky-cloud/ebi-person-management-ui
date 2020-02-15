@@ -20,7 +20,7 @@ After that, execute below command in a console.
 npm install -g @angular/cli@6.2.3
 ```
 
-# How to run?
+## Running
 
 - First, clone this repository on your computer or download as a zip file.
 ```shell
